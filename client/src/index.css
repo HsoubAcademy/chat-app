@@ -1,0 +1,250 @@
+*{
+	font-family: 'Cairo', sans-serif;
+	direction: rtl;
+	font-size: 14px;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+#main-container {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.dropdown-toggle::after {
+	display: none;
+}
+
+.heading{
+	background: #eeeeee;
+	color: #80868a;
+	padding: .5rem!important;
+	min-height: 66px;
+	align-items: center!important;
+}
+
+
+.search{
+	background: #eeeeee82;
+	padding: 1rem!important;
+	min-height: 50px;
+}
+
+#contacts-section{
+	position:relative;
+	flex-direction: column!important;
+	display: flex!important;
+	text-align: right;
+	height: 100%;
+}
+
+.list{
+	position: relative;
+    -webkit-flex-direction: column!important;
+    flex-direction: column!important;
+    display: -webkit-flex!important;
+    display: flex!important;
+    height: calc(100vh - 65px);
+}
+
+#contacts{
+	overflow-y:scroll;
+}
+
+.contact {
+	padding: .5rem !important;
+	background: white;
+	cursor: pointer;
+	flex-direction: row!important;
+	display: flex!important;
+	border-bottom: 1px solid #dee2e6!important;
+}
+.contact:hover {
+	background: hsl(0, 0%, 95%);
+}
+.contact:active {
+	background: hsl(0, 0%, 85%);
+}
+
+.contact .last-message{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#messages-section {
+	border-right: 1px solid white;
+	flex-direction: column!important;
+	display: flex!important;
+	padding: 0;
+	height: 100%;
+	background: hsl(0, 0%, 80%);
+}
+
+
+#messages {
+	flex: 1!important;
+	background: hsl(0, 0%, 80%);
+	overflow: auto;
+	flex-direction: column!important;
+	display: flex!important;
+}
+
+.message-item {
+	position:relative;
+	max-width: 75%;
+	word-break: break-word;
+	padding: .25rem!important;
+	margin: .25rem 1rem !important;
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+	border-radius: .25rem!important;
+	background: #FFF;
+	align-self: flex-start!important;
+	text-align: right;
+}
+
+.message-item.incoming {
+	background: #dcf8c6!important;
+	align-self: flex-end!important;
+}
+
+.message-item .number {
+	color: #1f7aec !important;
+}
+
+.message-item .options {
+	position: absolute;
+	top: 0;
+	right: -3px;
+	opacity: 0;
+	transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+}
+
+#send-message {
+	background: hsl(0, 0%, 95%);
+	padding: .5rem!important;
+	align-items: center!important;
+	flex-direction: row!important;
+	display: flex!important;
+}
+
+#send-message textarea {
+	outline: none;
+	resize: none;
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+	flex-grow: 1!important;
+	border-radius: .25rem!important;
+}
+
+.send {
+	cursor: pointer;
+}
+
+.side-profile {
+	position: absolute;
+	top: 0;
+	right: -110%;
+	background: hsl(0, 0%, 95%);
+	transition: all 0.3s ease-in;
+	-moz-transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	height: 100%!important;
+	width: 100%!important;
+	flex-direction: column!important;
+	display: flex!important;
+}
+
+.side-profile.open{
+	right: 0;
+}
+
+.side-profile input {
+	border: none;
+	border-bottom: 2px solid transparent !important;
+	outline: none;
+	box-shadow: none !important;
+	border-radius: 0;
+}
+
+.side-profile input:focus {
+	border-bottom-color: hsl(0, 0%, 50%) !important;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+.online{
+	position: relative;
+	font-size: 10px;
+	right: -25px;
+	top: -20px;
+	color: #00ce00;
+	margin-left: -8px;
+}
+
+.status{
+	color: #494f54;
+	font-size: 10px !important;
+}
+
+.nav-link{
+	cursor: pointer;
+	padding: .5rem 1rem !important;
+}
+
+/* Avatars */
+.avatar{
+	height:50px !important;
+	width: 50px !important;
+	cursor:pointer;
+}
+
+.side-profile .avatar{
+	cursor: pointer;
+	position: relative;
+	width: 200px !important;
+	height: 200px !important;
+	margin: 3rem auto !important;
+}
+
+.auth{
+	margin-top: 50px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.auth .form-control{
+	margin-bottom: 15px;
+}
+
+#page-404{
+	height: 100vh;
+}
+
+#loader{
+	position: fixed;
+	top: 45%;
+	left: 50%;
+}
