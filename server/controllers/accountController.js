@@ -1,7 +1,7 @@
 /**
  * HttpErrors Module.
  */
-const createError = ('http-errors');
+const createError = require('http-errors');
 
 /**
  * Update user profile.
