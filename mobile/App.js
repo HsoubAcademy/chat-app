@@ -1,10 +1,9 @@
 import React from 'react';
 import * as Font from 'expo-font';
-import { AppLoading } from 'expo';
+import AppLoading from 'expo-app-loading';
 import AppNavigation from './config/routes';
 import { Root } from 'native-base';
 import { ChatProvider } from './context/ChatProvider';
-import { YellowBox } from 'react-native';
 
 class App extends React.Component {
     
@@ -13,10 +12,6 @@ class App extends React.Component {
         this.state = {
             isReady: false
         };
-        // Remove socket.io yellow warning.
-        YellowBox.ignoreWarnings([
-            'Unrecognized WebSocket connection option(s) `agent`, `perMessageDeflate`, `pfx`, `key`, `passphrase`, `cert`, `ca`, `ciphers`, `rejectUnauthorized`. Did you mean to put these under `headers`?'
-        ]);
     }
 
     /**
@@ -33,7 +28,7 @@ class App extends React.Component {
     render(){
         if(!this.state.isReady){
             return (
-                <AppLoading startAsync={this._getFonts} onFinish={() => this.setState({isReady: true})} />
+                <AppLoading startAsync={this._getFonts} onFinish={() => this.setState({isReady: true})} onError={()=> {}} />
             );
         }
         return (

@@ -1,6 +1,3 @@
-/**
- * Create socket.io server as global.
- */
 io = require('socket.io')();
 
 /**
@@ -59,7 +56,7 @@ const onSocketConnected = socket => {
     users[socket.user.id] = true;
     // If this connection is the first one for user then broadcast user online to others.
     let room = io.sockets.adapter.rooms[socket.user.id];
-    if(room.length === 1){
+    if(!room || room.length === 1){
         io.emit('user_status', {
           [socket.user.id]: true  
         })

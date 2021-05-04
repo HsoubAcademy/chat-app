@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
-import AppRoute from 'AppRoute';
+import AppRoute from './AppRoute';
 import { Chat, NotFound, Register, Login, Password } from 'views';
 import Auth from './Auth';
 

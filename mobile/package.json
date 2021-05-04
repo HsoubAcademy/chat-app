@@ -8,30 +8,26 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "axios": "^0.19.0",
-    "expo": "^33.0.0",
-    "expo-constants": "^5.0.1",
-    "expo-font": "^5.0.1",
-    "expo-image-picker": "^5.0.2",
-    "moment": "^2.24.0",
-    "native-base": "^2.12.1",
-    "react": "16.8.3",
-    "react-dom": "^16.8.6",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
-    "react-native-elements": "^1.1.0",
-    "react-native-gifted-chat": "^0.9.11",
-    "react-native-image-picker": "^1.0.1",
-    "react-native-web": "^0.11.4",
-    "react-navigation": "^3.11.0",
-    "socket.io-client": "^2.2.0"
+    "axios": "^0.21.1",
+    "expo": "~40.0.0",
+    "expo-app-loading": "^1.0.1",
+    "expo-font": "~8.4.0",
+    "expo-image-picker": "~9.2.0",
+    "expo-status-bar": "~1.0.3",
+    "moment": "^2.29.1",
+    "native-base": "^2.15.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-gifted-chat": "^0.16.3",
+    "react-native-web": "^0.16.2",
+    "react-navigation": "^4.4.4",
+    "react-navigation-stack": "^2.10.4",
+    "socket.io-client": "^3.1.2"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.1.1"
+    "@babel/core": "~7.9.0"
   },
-  "private": true,
-  "rnpm": {
-    "assets": [
-      "./assets/fonts/"
-    ]
-  }
+  "private": true
 }
