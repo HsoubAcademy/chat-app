@@ -50,7 +50,7 @@ class Password extends React.Component {
                    <Input type="password"  value={this.state.newPassword} name="newPassword" onChange={this.onChange} placeholder="كلمة المرور الجديدة" required />
                    <Button block className="mb-3"> تغيير </Button>
                    <small><Link to="/">عودة</Link></small>
-                   <p className="mt-3 mb-3 text-muted">&copy; 2018 - 2019</p>
+                   <p className="m-3 mb-3 text-muted">&copy; { new Date().getFullYear() }</p>
                </Form>
            </Card>
        );
