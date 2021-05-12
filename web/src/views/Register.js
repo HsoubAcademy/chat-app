@@ -54,7 +54,7 @@ class Register extends React.Component{
                 <Input type="password" value={this.state.password} name="password" onChange={this.onChange} placeholder="كلمة المرور" required />
                 <Button color="primary" block className="mb-3"> إنشاء </Button>
                 <small><Link to="/login">تسجيل الدخول</Link></small>
-                <p className="m-3 text-muted">&copy; 2018 - 2019</p>
+                <p className="m-3 text-muted">&copy; { new Date().getFullYear() }</p>
             </Form>
         </Card>
         );
